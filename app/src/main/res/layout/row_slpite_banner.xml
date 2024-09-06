@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/row_split_banner_1_img"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginEnd="2dp"
+            tools:background="@mipmap/ic_launcher"
+            android:contentDescription="@string/banner_image"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/row_split_banner_1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sp"
+            android:textStyle="italic"
+            tools:text="Item1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/row_split_banner_2_img"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginStart="3dp"
+            android:contentDescription="@string/banner_image"
+            android:scaleType="centerCrop"
+            tools:background="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/row_split_banner_2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sp"
+            android:textStyle="italic"
+            tools:text="Item2 " />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
